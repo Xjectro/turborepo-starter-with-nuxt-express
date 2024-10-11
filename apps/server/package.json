@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "module": "src/app.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "swc ./src --out-dir ./dist && shx mv dist/src/* dist/ && shx rm -r dist/src",
+    "start": "bun run ./dist/app"
+  },
+  "devDependencies": {
+    "@repo/database": "*",
+    "@repo/typescript-config": "*",
+    "@types/bun": "latest",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@swc/cli": "^0.4.1-nightly.20240914",
+    "@swc/core": "^1.7.35",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/morgan": "^1.9.9", 
+    "@types/multer": "^1.4.12",
+    "@types/nodemailer": "^6.4.16",
+    "@types/uuid": "^10.0.0",
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "express-rate-limit": "^7.4.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.15",
+    "nodemon": "^3.1.7",
+    "shx": "^0.3.4",
+    "uuid": "^10.0.0",
+    "zod": "^3.23.8"
+  }
+}

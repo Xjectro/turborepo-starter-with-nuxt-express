@@ -1,0 +1,31 @@
+{
+  "name": "client",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "format": "prettier --write ./",
+    "postinstall": "nuxt prepare",
+    "start": "node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^0.5.7",
+    "@pinia/nuxt": "^0.5.5",
+    "i": "^0.3.7",
+    "@repo/ui": "*",
+    "@repo/translation": "*",
+    "@repo/utils": "*"
+  },
+  "dependencies": {
+    "nuxt": "^3.13.2",
+    "nuxt-icon": "^1.0.0-beta.7",
+    "prettier": "^3.3.3",
+    "radix-vue": "^1.9.7",
+    "vaul-vue": "^0.2.0",
+    "vue": "latest",
+    "vue-router": "latest"
+  }
+}

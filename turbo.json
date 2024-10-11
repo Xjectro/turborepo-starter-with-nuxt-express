@@ -1,0 +1,33 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "start": {
+      "cache": false,
+      "persistent": true
+    }
+  },
+  "globalEnv": [
+    "MONGOOSE_URI",
+    "JWT_SECRET",
+    "DISCORD_REDIRECT_URI",
+    "DISCORD_CLIENT_ID",
+    "DISCORD_CLIENT_SECRET",
+    "DISCORD_CLIENT_TOKEN",
+    "BUNNY_ACCESS_KEY",
+    "BUNNY_STORAGE_NAME",
+    "BUNNY_HOST_NAME"
+  ],
+  "envMode": "loose"
+}

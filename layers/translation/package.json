@@ -1,0 +1,25 @@
+{
+  "name": "@repo/translation",
+  "private": true,
+  "type": "module",
+  "main": "./nuxt.config.ts",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "format": "prettier --write ./",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "nuxt": "^3.13.2",
+    "prettier": "^3.3.3",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^0.5.7",
+    "@nuxtjs/i18n": "^8.5.5",
+    "i": "^0.3.7"
+  }
+}
